@@ -3,8 +3,8 @@
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
     <Version>0.1.0-preview1</Version>
-    <AssemblyName>Senparc.TouTiao</AssemblyName>
-    <RootNamespace>Senparc.TouTiao</RootNamespace>
+    <AssemblyName>Senparc.Toutiao</AssemblyName>
+    <RootNamespace>Senparc.Toutiao</RootNamespace>
     <GeneratePackageOnBuild Condition=" '$(Configuration)' == 'Release' ">true</GeneratePackageOnBuild>
     <Description>
       头条 SDK - Senparc.TouTiao SDK 基础模块
@@ -18,7 +18,7 @@
     <Owners>Senparc</Owners>
     <PackageLicenseUrl>https://github.com/Senparc/TouTiaoSDK/blob/master/license.md</PackageLicenseUrl>
     <ProjectUrl>https://github.com/Senparc/TouTiaoSDK</ProjectUrl>
-    <Title>Senparc.TouTiao.dll</Title>
+    <Title>Senparc.Toutiao.dll</Title>
     <Summary>微信公众号SDK for C#</Summary>
     <PackageProjectUrl>https://github.com/Senparc/TouTiaoSDK</PackageProjectUrl>
     <PackageIconUrl>http://sdk.weixin.senparc.com/Images/Logo.jpg</PackageIconUrl>
@@ -37,7 +37,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
     <OutputPath>..\BuildOutPut</OutputPath>
     <DefineConstants>$(DefineConstants);RELEASE</DefineConstants>
-    <DocumentationFile>..\BuildOutPut\Senparc.TouTiao.XML</DocumentationFile>
+    <DocumentationFile>..\BuildOutPut\Senparc.Toutiao.XML</DocumentationFile>
     <Optimize>true</Optimize>
     <DebugType>pdbonly</DebugType>
     <ErrorReport>prompt</ErrorReport>
@@ -46,15 +46,20 @@
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netstandard2.0|AnyCPU'">
     <OutputPath>..\BuildOutPut\</OutputPath>
-    <DocumentationFile>..\BuildOutPut\netstandard2.0\Senparc.TouTiao.xml</DocumentationFile>
+    <DocumentationFile>..\BuildOutPut\netstandard2.0\Senparc.Toutiao.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netstandard2.1|AnyCPU'">
     <OutputPath>..\BuildOutPut\</OutputPath>
-    <DocumentationFile>..\BuildOutPut\netstandard2.1\Senparc.TouTiao.xml</DocumentationFile>
+    <DocumentationFile>..\BuildOutPut\netstandard2.1\Senparc.Toutiao.xml</DocumentationFile>
   </PropertyGroup>
-  
+
   <ItemGroup>
     <PackageReference Include="Senparc.NeuChar" Version="1.2.106" />
   </ItemGroup>
+  
+  <ItemGroup>
+    <Folder Include="Entities\JsonResult\" />
+  </ItemGroup>
+  
 
 </Project>

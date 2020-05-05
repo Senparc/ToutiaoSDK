@@ -1,7 +1,7 @@
 
 <img src="https://sdk.weixin.senparc.com/images/senparc-logo-500.jpg" />
 
-## TouTiaoSDK
+## Senparc.Toutiao SDK
 头条小程序/小游戏 SDK，基于 NeuChar 标准实现，具备跨平台能力。
 
 ## 头条官方文档
