@@ -40,6 +40,13 @@ namespace Senparc.Toutiao.Entities
 
         public ISenparcToutiaoSettingForApps AppsSetting => this;
 
+
+        /// <summary>
+        /// SenparcToutiaoSetting 构造函数
+        /// </summary>
+        public SenparcToutiaoSetting() : this(false)
+        { }
+
         /// <summary>
         /// SenparcToutiaoSetting 构造函数
         /// </summary>
