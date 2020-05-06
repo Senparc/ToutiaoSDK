@@ -49,7 +49,7 @@ namespace Senparc.Toutiao
 
         /// <summary>
         /// <para>头条全局配置</para>
-        /// <para>注意：在程序运行过程中修改 SenparcWeixinSetting.Items 中的微信配置值，并不能修改 Container 中的对应信息（如AppSecret），</para>
+        /// <para>注意：在程序运行过程中修改 SenparcWeixinSetting.Items 中的头条配置值，并不能修改 Container 中的对应信息（如AppSecret），</para>
         /// <para>如果需要修改头条信息（如AppSecret）应该使用 xxContainer.Register() 修改，这里的值也会随之更新。</para>
         /// </summary>
         public static SenparcToutiaoSetting SenparcToutiaoSetting { get; set; }
@@ -88,7 +88,7 @@ namespace Senparc.Toutiao
         #region  小程序 API 的服务器地址（默认为：https://developer.toutiao.com）
 
         /// <summary>
-        /// 公众号（小程序）、开放平台 API 的服务器地址（默认为：https://api.weixin.qq.com）
+        /// 小程序 API 的服务器地址（默认为：https://developer.toutiao.com）
         /// </summary>
         public static string ApiAppsHost { get; set; } = "https://developer.toutiao.com";
 

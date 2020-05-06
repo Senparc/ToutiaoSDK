@@ -9,7 +9,7 @@ namespace Senparc.Toutiao.Entities
         #region 头条全局
 
         /// <summary>
-        /// 是否处于 Debug 状态（仅限微信范围）
+        /// 是否处于 Debug 状态（仅限头条范围）
         /// </summary>
         public bool IsDebug { get; set; }
 

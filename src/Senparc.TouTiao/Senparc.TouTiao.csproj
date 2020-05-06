@@ -19,7 +19,7 @@
     <PackageLicenseUrl>https://github.com/Senparc/TouTiaoSDK/blob/master/license.md</PackageLicenseUrl>
     <ProjectUrl>https://github.com/Senparc/TouTiaoSDK</ProjectUrl>
     <Title>Senparc.Toutiao.dll</Title>
-    <Summary>微信公众号SDK for C#</Summary>
+    <Summary>头条 SDK for C#</Summary>
     <PackageProjectUrl>https://github.com/Senparc/TouTiaoSDK</PackageProjectUrl>
     <PackageIconUrl>http://sdk.weixin.senparc.com/Images/Logo.jpg</PackageIconUrl>
     <RepositoryUrl>https://github.com/Senparc/TouTiaoSDK</RepositoryUrl>
