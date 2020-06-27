@@ -54,11 +54,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Senparc.NeuChar" Version="1.2.106" />
-  </ItemGroup>
-  
-  <ItemGroup>
-    <Folder Include="Entities\JsonResult\" />
+    <PackageReference Include="Senparc.NeuChar" Version="1.2.108" />
   </ItemGroup>
   
 

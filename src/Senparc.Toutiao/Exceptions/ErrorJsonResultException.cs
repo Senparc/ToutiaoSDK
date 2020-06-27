@@ -43,12 +43,12 @@ namespace Senparc.Toutiao.Exceptions
     /// <summary>
     /// JSON返回错误代码异常（比如access_token相关操作中使用）
     /// </summary>
-    public class ErrorJsonResultException : WeixinException
+    public class ErrorJsonResultException : ToutiaoException
     {
         /// <summary>
         /// JsonResult
         /// </summary>
-        public WxJsonResult JsonResult { get; set; }
+        public TtJsonResult JsonResult { get; set; }
         /// <summary>
         /// 接口 URL
         /// </summary>
@@ -61,13 +61,13 @@ namespace Senparc.Toutiao.Exceptions
         /// <param name="inner">内部异常</param>
         /// <param name="jsonResult">WxJsonResult</param>
         /// <param name="url">API地址</param>
-        public ErrorJsonResultException(string message, Exception inner, WxJsonResult jsonResult, string url = null)
+        public ErrorJsonResultException(string message, Exception inner, TtJsonResult jsonResult, string url = null)
             : base(message, inner, true)
         {
             JsonResult = jsonResult;
             Url = url;
 
-            WeixinTrace.ErrorJsonResultExceptionLog(this);
+            ToutiaoTrace.ErrorJsonResultExceptionLog(this);
         }
     }
 }

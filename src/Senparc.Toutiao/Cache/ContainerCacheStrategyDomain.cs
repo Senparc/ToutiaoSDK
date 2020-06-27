@@ -42,7 +42,7 @@ namespace Senparc.Toutiao.Cache
 
         #endregion
 
-        private const string IDENTITY_NAME= "6526BBC0-718A-4F47-9675-D6DF6E1CE125";//固定值，请勿修改
+        private const string IDENTITY_NAME= "0EEBB862-276C-4546-9964-FF9733EBD36B";//固定值，请勿修改
         private const string DOMAIN_NAME = "ToutiaoContainer";//固定值，请勿修改。同时会作为缓存键命名空间的子级名称
 
         public string IdentityName { get { return IDENTITY_NAME; } }

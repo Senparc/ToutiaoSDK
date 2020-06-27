@@ -22,7 +22,7 @@ Detail: https://github.com/JeffreySu/WeiXinMPSDK/blob/master/license.md
     Copyright (C) 2020 Senparc
     
     文件名：MessageHandlerException.cs
-    文件功能描述：头条消息异常处理类
+    文件功能描述：微信消息异常处理类
     
     
     创建标识：Senparc - 20150211
@@ -43,7 +43,7 @@ namespace Senparc.Toutiao.Exceptions
     /// <summary>
     /// MessageHandler异常
     /// </summary>
-    public class MessageHandlerException : WeixinException
+    public class MessageHandlerException : ToutiaoException
     {
           public MessageHandlerException(string message)
             : this(message, null)

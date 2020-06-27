@@ -1,7 +1,7 @@
 ﻿#region Apache License Version 2.0
 /*----------------------------------------------------------------
 
-Copyright 2020 Jeffrey Su & Suzhou Senparc Network Technology Co.,Ltd.
+Copyright 2020 Suzhou Senparc Network Technology Co.,Ltd.
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file
 except in compliance with the License. You may obtain a copy of the License at
@@ -122,58 +122,6 @@ namespace Senparc.Toutiao.Containers
             }
         }
 
-        //2016.8.8注释掉
-        /// <summary>
-        /// 获取当前容器的数据项集合
-        /// </summary>
-        /// <returns></returns>
-        //protected static IContainerItemCollection ItemCollection
-        //{
-        //    get
-        //    {
-        //        var cacheKey = GetContainerCacheKey();
-        //        IContainerItemCollection itemCollection;
-        //        if (!Cache.CheckExisted(cacheKey))
-        //        {
-        //            itemCollection = new ContainerItemCollection();
-        //            //CollectionList[cacheKey] = newItemCollection;
-
-        //            //直接执行
-        //            //{
-        //            //}
-        //            //var containerCacheStrategy = CacheStrategyFactory.GetContainerCacheStrategyInstance();
-        //            //containerCacheStrategy.InsertToCache(cacheKey, itemCollection);//插入到缓存
-
-        //            //保存到缓存队列，等待执行
-        //            SenparcMessageQueue mq = new SenparcMessageQueue();
-        //            var mqKey = SenparcMessageQueue.GenerateKey("ContainerItemCollection", typeof(BaseContainer<TBag>), cacheKey, "InsertItemCollection");
-        //            mq.Add(mqKey, () =>
-        //            {
-        //                var containerCacheStrategy = CacheStrategyFactory.GetContainerCacheStrategyInstance();
-        //                containerCacheStrategy.InsertToCache(cacheKey, itemCollection);//插入到缓存
-        //            });
-        //        }
-        //        else
-        //        {
-        //            itemCollection = Cache.Get(cacheKey);
-        //        }
-
-        //        return itemCollection;
-        //    }
-        //}
-
-
-
-        ///// <summary>
-        ///// 获取Container缓存Key
-        ///// </summary>
-        ///// <returns></returns>
-        //public static string GetContainerCacheKey()
-        //{
-        //    return ContainerHelper.GetCacheKey(typeof(TBag));
-        //}
-
-
 
         /// <summary>
         /// 进行注册过程的委托集合
@@ -228,7 +176,7 @@ namespace Senparc.Toutiao.Containers
                     appId = Senparc.Toutiao.Config.SenparcToutiaoSetting.AppId;
                     break;
                 default:
-                    throw new ArgumentOutOfRangeException($"未知的 PlatformType {nameof(platformType)}：{platformType.ToString(0}");
+                    throw new ArgumentOutOfRangeException($"未知的 PlatformType {nameof(platformType)}：{platformType.ToString()}");
             }
 
             if (appId == null)
@@ -423,21 +371,11 @@ namespace Senparc.Toutiao.Containers
             string appId = null;
             switch (platformType)
             {
-                case PlatformType.MP:
-                    appId = Senparc.Toutiao.Config.SenparcWeixinSetting.WeixinAppId;
-                    break;
-                case PlatformType.Open:
-                    appId = Senparc.Toutiao.Config.SenparcWeixinSetting.WeixinAppId;
-                    break;
-                case PlatformType.WxOpen:
-                    appId = Senparc.Toutiao.Config.SenparcWeixinSetting.WxOpenAppId;
-                    break;
-                case PlatformType.QY:
-                    break;
-                case PlatformType.Work:
+                case PlatformType.Apps:
+                    appId = Senparc.Toutiao.Config.SenparcToutiaoSetting.AppId;
                     break;
                 default:
-                    break;
+                    throw new ArgumentOutOfRangeException($"未知的 PlatformType {nameof(platformType)}：{platformType.ToString()}");
             }
 
             if (appId == null)

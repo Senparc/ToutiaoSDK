@@ -38,7 +38,7 @@ namespace Senparc.Toutiao.Exceptions
     /// <summary>
     /// 未注册 AppId 异常
     /// </summary>
-    public class UnRegisterAppIdException : WeixinException
+    public class UnRegisterAppIdException : ToutiaoException
     {
         public string AppId { get; set; }
         public UnRegisterAppIdException(string appId, string message, Exception inner = null)
