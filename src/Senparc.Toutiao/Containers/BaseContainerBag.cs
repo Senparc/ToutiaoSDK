@@ -42,13 +42,9 @@ Detail: https://github.com/JeffreySu/WeiXinMPSDK/blob/master/license.md
 
 ----------------------------------------------------------------*/
 
-
-
-
 using System;
 using System.Runtime.CompilerServices;
 using Senparc.CO2NET.MessageQueue;
-using Senparc.Toutiao.Annotations;
 using Senparc.Toutiao.Cache;
 using Senparc.Toutiao.Entities;
 using Senparc.Toutiao.Helpers;
