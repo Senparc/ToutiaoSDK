@@ -54,7 +54,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Senparc.NeuChar" Version="1.2.108" />
+    <PackageReference Include="Senparc.NeuChar" Version="2.1.6" />
   </ItemGroup>
   
 
